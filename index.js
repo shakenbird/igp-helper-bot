@@ -25,7 +25,7 @@ if (!Array.isArray(config.bot.intents)) {
   );
 } else {
   finalIntents = config.bot.intents;
-  intentsLoader.succeed("Loaded intents successfully from the config file");
+  intentsLoader.succeed("Loaded intents successfully from the config file.");
 }
 
 const client = new Client({ 
