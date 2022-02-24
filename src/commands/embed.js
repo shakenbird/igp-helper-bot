@@ -12,29 +12,29 @@ module.exports = {
       .setRequired(true))
     .addStringOption(option => option
       .setName('title')
-      .setDescription('Embed title')
+      .setDescription('Embed title.')
       .setRequired(false))
     .addStringOption(option => option
       .setName('description')
-      .setDescription('Embed description')
+      .setDescription('Embed description.')
       .setRequired(false))
     .addStringOption(option => option
       .setName('timestamp')
-      .setDescription('Embed timestamp')
+      .setDescription('Embed timestamp.')
       .setRequired(false)
       .addChoice('true', 'true')
       .addChoice('false', 'false'))
     .addStringOption(option => option
       .setName('color')
-      .setDescription('Embed color')
+      .setDescription('Embed color.')
       .setRequired(false))
     .addStringOption(option => option
       .setName('author')
-      .setDescription('Embed author')
+      .setDescription('Embed author.')
       .setRequired(false))
     .addStringOption(option => option
       .setName('footer')
-      .setDescription('Embed footer')
+      .setDescription('Embed footer.')
       .setRequired(false)),
   run: async (interaction) => {
     try {
