@@ -4,7 +4,7 @@ module.exports = {
     event: "threadCreate",
     oneTime: false,
     run: async (thread) => {
-        if (thread.parentId === "1079641175130128485") {
+        if (thread.parentId === "1019651650610274426") {
             thread.send(`• What is the exact version of Discord.js you are using? Run \`npm list discord.js\` in shell (if applicable)\n• Show the full error as a screenshot, not just the stack trace.\n• Show your code in a codeblock or a screenshot.\n• Provide a detailed explaination of the issue you are having.`)
 
             let verPromptEmbed = new MessageEmbed()
@@ -15,7 +15,7 @@ module.exports = {
                 }, 20000)
             })
             const filter = m => m.content.size < 8 || Number.isInteger(parseInt(m.content.charAt(0)))
-            const collector = thread.createMessageCollector({ filter, time: 20000 });
+            const collector = thread.createMessageCollector({ filter, time: 20000, max: 1 });
           
             collector.on('collect', m => {
                 let verEmbed = new MessageEmbed()

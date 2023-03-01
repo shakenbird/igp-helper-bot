@@ -39,7 +39,7 @@ db.once("open", function () {
     const finalArray = commandsArray.map((e) => e.data.toJSON());
     slash.register(client.user.id, finalArray);
     botLoader.succeed(`${client.user.tag} Started`);
-    client.user.setActivity("/help", { type: "PLAYING" });
+    client.user.setActivity("hello", { type: "PLAYING" });
     console.log(`\nClient set on ${client.guilds.cache.size} guilds.`);
   },
 };
