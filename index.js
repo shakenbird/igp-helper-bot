@@ -1,11 +1,4 @@
-const express = require('express')
-const app = express()
-
-app.get("/", (req, res) => {
-  res.send('Arrow Beta')
-})
-
-app.listen(3000, () => {})
+const fetch = require('node-fetch')
 
 const ora = require("ora");
 const config = require("./config");
@@ -13,6 +6,8 @@ const fs = require("fs");
 
 const { Client, Collection } = require("discord.js");
 const slash = require("./src/util/slash");
+
+
 
 // CLI
 const intentsLoader = ora("Registering Intents").start();
