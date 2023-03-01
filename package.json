@@ -39,7 +39,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "node": "^17.4.0"
+    "node": "^19.6.1"
   },
   "description": ""
 }
