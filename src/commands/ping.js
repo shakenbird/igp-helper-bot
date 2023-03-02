@@ -3,7 +3,7 @@ const { MessageEmbed } = require("discord.js");
 module.exports = {
   data: new SlashCommandBuilder()
     .setName("ping")
-    .setDescription("View the bot's latency"),
+    .setDescription("Replies with pong"),
   run: async (interaction) => {
     await interaction.reply({ content: `Pong!` })
   }
